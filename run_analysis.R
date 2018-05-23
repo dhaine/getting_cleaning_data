@@ -49,10 +49,9 @@ names(data_extract) <- gsub("Gyro", "Gyroscope", names(data_extract))
 names(data_extract) <- gsub("Mag", "Magnitude", names(data_extract))
 names(data_extract) <- gsub("BodyBody", "Body", names(data_extract))
 names(data_extract) <- gsub("tBody", "TimeBody", names(data_extract))
-names(data_extract) <- gsub("-mean()", "Mean", names(data_extract), ignore.case = TRUE)
-names(data_extract) <- gsub("-std()", "SD", names(data_extract), ignore.case = TRUE)
-names(data_extract) <- gsub("-freq()", "Frequency", names(data_extract),
-                            ignore.case = TRUE)
+names(data_extract) <- gsub("-mean()", "Mean", names(data_extract))
+names(data_extract) <- gsub("-std()", "SD", names(data_extract))
+names(data_extract) <- gsub("-freq()", "Frequency", names(data_extract))
 names(data_extract) <- gsub("angle", "Angle", names(data_extract))
 names(data_extract) <- gsub("gravity", "Gravity", names(data_extract))
 
